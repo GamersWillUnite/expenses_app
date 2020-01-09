@@ -16,14 +16,14 @@ class ShoppingItem extends StatelessWidget {
             child: Text(
               "\$" + tx.amount.toStringAsFixed(2),
               style: TextStyle(
-                color: Colors.deepPurpleAccent,
+                color: Theme.of(context).accentColor,
                 fontWeight: FontWeight.bold,
               ),
             ),
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             decoration: BoxDecoration(
               border: Border.all(
-                color: Colors.deepPurpleAccent,
+                color: Theme.of(context).primaryColor,
                 style: BorderStyle.solid,
                 width: 2,
               ),
